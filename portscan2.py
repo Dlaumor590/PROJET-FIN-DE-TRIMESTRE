@@ -18,20 +18,19 @@ def portscan(port):
 
 def get_ports(mode):
     if mode == 1:
-        for port in range(1, 1024):
+        for port in range(0, 1025):
             queue.put(port)
     elif mode == 2:
-        for port in range(1, 49152):
+        for port in range(1025, 65535):
             queue.put(port)
     elif mode == 3:
         ports = [20, 21, 22, 23, 25, 53, 80, 110, 443]
         for port in ports:
             queue.put(port)
-     elif mode == 3:
-        ports = [20, 21, 22, 23, 25, 53, 80, 110, 443]
-        for port in ports:
-            queue.put(port)
     elif mode == 4:
+        for port in range(0, 65535):
+            queue.put(port)
+    elif mode == 5:
         ports = input("Enter your ports (seperate by blank):")
         ports = ports.split()
         ports = list(map(int, ports))
