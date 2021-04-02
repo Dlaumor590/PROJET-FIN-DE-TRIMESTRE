@@ -112,5 +112,6 @@ date_du_scan = str(datetime.datetime.now())
 report.writelines('\n' + date_du_scan + '\n')
 report.writelines(
     '**********Les ports ouverts trouvés par le scan**********\n')
+report.writelines('Hôte : ' + target)
 report.writelines(str(open_ports) + '\n')
 report.close()
