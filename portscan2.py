@@ -12,6 +12,7 @@ def portscan(port):
     try:
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         sock.connect((target, port))
+        sock.settimeout(1)
         return True
     except:
         return False
