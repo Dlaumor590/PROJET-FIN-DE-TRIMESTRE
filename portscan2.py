@@ -27,6 +27,10 @@ def get_ports(mode):
         ports = [20, 21, 22, 23, 25, 53, 80, 110, 443]
         for port in ports:
             queue.put(port)
+     elif mode == 3:
+        ports = [20, 21, 22, 23, 25, 53, 80, 110, 443]
+        for port in ports:
+            queue.put(port)
     elif mode == 4:
         ports = input("Enter your ports (seperate by blank):")
         ports = ports.split()
