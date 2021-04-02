@@ -76,5 +76,5 @@ date_du_scan = str(datetime.datetime.now())
 report.writelines(date_du_scan + '\n')
 report.writelines(
     '**********Les ports ouverts trouvés par le scan**********\n')
-report.writelines(str(open_ports))
+report.writelines(str(open_ports) + '\n')
 report.close()
