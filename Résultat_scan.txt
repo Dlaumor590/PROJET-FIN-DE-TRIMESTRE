@@ -30,3 +30,28 @@ Ports ouverts: [1521, 1536, 1537, 1539, 1538, 1542, 1549, 1562, 3306, 3307, 3938
 **********Les ports ouverts trouvés par le scan**********
 Hôte : 10.0.119.254
 Liste des ports ouverts: [4786]
+
+2021-04-02 20:35:53.685431
+**********Les ports ouverts trouvés par le scan**********
+Hôte : youtube.com
+Liste des ports ouverts: [80, 443]
+
+2021-04-02 20:37:13.208474
+**********Les ports ouverts trouvés par le scan**********
+Hôte : www.google.com
+Liste des ports ouverts: [80, 443]
+
+2021-04-02 20:38:11.712977
+**********Les ports ouverts trouvés par le scan**********
+Hôte : https://www.ipnetuniversity.com/#/
+Liste des ports ouverts: []
+
+2021-04-02 20:39:32.617149
+**********Les ports ouverts trouvés par le scan**********
+Hôte : ipnetuniversity.com
+Liste des ports ouverts: [22, 25, 80, 21, 110, 143, 587]
+
+2021-04-02 20:47:34.768441
+**********Les ports ouverts trouvés par le scan**********
+Hôte : 127.0.0.1
+Liste des ports ouverts: [81, 135, 443, 444, 445, 902, 912, 1001]
