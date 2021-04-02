@@ -71,8 +71,8 @@ run_scanner(500, mode)
 
 
 report = open("Résultat_scan.txt", "a")
-#date_du_scan = datetime.datetime.now()
-# report.write(date_du_scan)
+date_du_scan = str(datetime.datetime.now())
+report.write(date_du_scan)
 report.write('**********Les ports ouverts trouvés par les scan**********')
-report.write(open_ports)
+report.write(str(open_ports))
 report.close()
