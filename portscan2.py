@@ -71,7 +71,7 @@ mode = int(input("\n**************Choisissez le mode d'exécution du scan :*****
 run_scanner(500, mode)
 
 
-report = open("Résultat_scan.txt", "w")
+report = open("Résultat_scan.txt", "a")
 date_du_scan = str(datetime.datetime.now())
 report.writelines(date_du_scan + '\n')
 report.writelines(
