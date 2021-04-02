@@ -1,6 +1,7 @@
 from queue import Queue
 import socket
 import threading
+import datetime
 
 target = input("Entrer l'adresse à scanner au format x.x.x.x : ")
 queue = Queue()
@@ -68,7 +69,9 @@ def run_scanner(threads, mode):
 mode = int(input("\n**************Choisissez le mode d'exécution du scan :**************\n1-Scan des ports 0 à 1024\n2-Scan des ports 1025 à 65535\n3-Scan des ports suivants:\n*20 ftp data\n*21 ftp control\n*22 ssh\n*23 telnet\n*25 smtp \n*53 dns \n*80 http \n*110 POP3 \n*443 https\n\n4-Scan de tous les ports de 0 à 65535\n5-Scan manuel des ports (Vous devrez spécifier les ports à scanner)\n:"))
 run_scanner(500, mode)
 
+
 report = open("Résultat_scan.txt", "a")
+report.write(datetime.datetime.now())
 report.write('**********Les ports ouverts trouvés par les scan**********')
 report.write(open_ports)
 report.close()
