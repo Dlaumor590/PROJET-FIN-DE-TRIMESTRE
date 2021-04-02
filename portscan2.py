@@ -17,7 +17,9 @@ import threading
 # il permettra de spécifier la date et l'heure du scan
 import datetime
 
+
 target = input("Entrer l'adresse à scanner au format x.x.x.x : ")
+
 
 # on créé une queue vide dans laquelle on attachera les numéros de ports a scanner
 queue = Queue()
@@ -112,6 +114,6 @@ date_du_scan = str(datetime.datetime.now())
 report.writelines('\n' + date_du_scan + '\n')
 report.writelines(
     '**********Les ports ouverts trouvés par le scan**********\n')
-report.writelines('Hôte : ' + target)
-report.writelines(str(open_ports) + '\n')
+report.writelines('Hôte : ' + target + '\n')
+report.writelines('Liste des ports ouverts: ' + str(open_ports) + '\n')
 report.close()
