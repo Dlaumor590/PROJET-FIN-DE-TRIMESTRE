@@ -2,7 +2,7 @@ from queue import Queue
 import socket
 import threading
 
-target = []
+target = input("Entrer l'adresse à scanner au format x.x.x.x : ")
 queue = Queue()
 open_ports = []
 
@@ -31,7 +31,7 @@ def get_ports(mode):
         for port in range(0, 65535):
             queue.put(port)
     elif mode == 5:
-        ports = input("Enter your ports (seperate by blank):")
+        ports = input("Enter les numéros de ports séparés par un espace: ")
         ports = ports.split()
         ports = list(map(int, ports))
         for port in ports:
@@ -42,7 +42,7 @@ def worker():
     while not queue.empty():
         port = queue.get()
         if portscan(port):
-            print("Port {} is open!".format(port))
+            print("Le port {} est ouvert!".format(port))
             open_ports.append(port)
 
 
@@ -62,7 +62,8 @@ def run_scanner(threads, mode):
     for thread in thread_list:
         thread.join()
 
-    print("Open ports are:", open_ports)
+    print("Les ports ouverts sont :", open_ports)
 
 
-run_scanner(500, 2)
+mode = print("Choisissez le mode d'exécution du scan :\n1-Scan des ports 0 à 1024\n2-Scan des ports 1025 à 65535\n3-Scan des ports suivants:\n*20 ftp data\n*21 ftp control\n*22 ssh\n*23 telnet\n*25 smtp \n*53 dns \n*80 http \n*110 POP3 \n*443 https\n\n4-Scan de tous les ports de 0 à 65535\n5-Scan manuel des ports (Vous devrez spécifier les ports à scanner)")
+run_scanner(500, mode)
