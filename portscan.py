@@ -102,7 +102,7 @@ def run_scanner(threads, mode):
 mode = int(input("\n**************Choisissez le mode d'exécution du scan :**************\n1-Scan des ports 0 à 1024\n2-Scan des ports 1025 à 65535\n3-Scan des ports suivants:\n*20 ftp data\n*21 ftp control\n*22 ssh\n*23 telnet\n*25 smtp \n*53 dns \n*80 http \n*110 POP3 \n*443 https\n\n4-Scan de tous les ports de 0 à 65535\n5-Scan manuel des ports (Vous devrez spécifier les ports à scanner)\n:"))
 
 # on lance la fonction en indiquant qu'on veut utiliser 500 threads
-run_scanner(500, mode)
+run_scanner(1000, mode)
 
 
 # on créé un fichier qui contiendra la date du scan, le résultat du scan c'est à dire
