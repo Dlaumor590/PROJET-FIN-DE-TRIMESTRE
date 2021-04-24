@@ -95,3 +95,13 @@ Liste des ports ouverts: [23, 22, 80, 4786]
 **********Les ports ouverts trouvés par le scan**********
 Hôte : 10.0.203.254
 Liste des ports ouverts: [22, 23, 80]
+
+2021-04-24 01:40:34.141443
+**********Les ports ouverts trouvés par le scan**********
+Hôte : 127.0.0.1
+Liste des ports ouverts: [135, 443, 445, 903, 913, 1001]
+
+2021-04-24 01:41:51.181757
+**********Les ports ouverts trouvés par le scan**********
+Hôte : 127.0.0.1
+Liste des ports ouverts: [135, 443, 445, 903, 913, 1001, 1536, 1537, 1539, 1538, 1540, 1547, 1555, 5040, 5354, 5985, 7680, 8307, 17919, 47001, 49350, 49351]
