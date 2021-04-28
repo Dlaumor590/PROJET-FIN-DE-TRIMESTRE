@@ -105,3 +105,18 @@ Liste des ports ouverts: [135, 443, 445, 903, 913, 1001]
 **********Les ports ouverts trouvés par le scan**********
 Hôte : 127.0.0.1
 Liste des ports ouverts: [135, 443, 445, 903, 913, 1001, 1536, 1537, 1539, 1538, 1540, 1547, 1555, 5040, 5354, 5985, 7680, 8307, 17919, 47001, 49350, 49351]
+
+2021-04-26 19:01:07.199638
+**********Les ports ouverts trouvés par le scan**********
+Hôte : 10.0.119.254
+Liste des ports ouverts: [80, 22, 443, 23]
+
+2021-04-26 19:04:09.469946
+**********Les ports ouverts trouvés par le scan**********
+Hôte : 10.0.119.254
+Liste des ports ouverts: [22, 23, 80]
+
+2021-04-26 19:04:20.760846
+**********Les ports ouverts trouvés par le scan**********
+Hôte : 10.0.119.254
+Liste des ports ouverts: [22, 23, 80, 443]
